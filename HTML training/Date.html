@@ -1,0 +1,33 @@
+<HTML>
+<BODY>
+<script type="text/javascript">
+
+var d= new Date()
+var d1 = new Date ("July 21, 1983 01:15:00")
+document.write("Day of Month : " + d.getDate() + "<BR>")
+document.write ("UTC Date : " + d.getUTCDate () + "<BR>");
+document.write("Day of Week : " + d.getDay() + "<BR>")
+document.write("Month of Year : " + d.getMonth() + "<BR>")
+document.write("YYYY : " + d.getFullYear() + "<BR>")
+document.write("YY : " + d.getYear() + "<BR>")
+
+document.write ("Current Time : " + d.getHours () + ": "+ d.getMinutes () + ":" + d.getSeconds () + "<BR>")
+document.write ("UTC Hours & Minutes : " + d.getUTCHours () + ":" + d.getUTCMinutes () + "<BR>");
+document.write ("Full date and time : " + d + "<BR>")
+document.write ("Time Zone : " + d.getTimezoneOffset () + "<BR>")
+
+d.setHours (06)
+d.setMinutes (06)
+d.setSeconds (06)
+d.setDate (03)
+d.setMonth (04)
+d.setYear (2002)
+
+document.write ("Full date and time : " + d + "<BR>")
+
+var d2 = new Date ()
+
+document.write ("Today : " + d2 + "<BR>");
+</script>
+</BODY>
+</HTML>
